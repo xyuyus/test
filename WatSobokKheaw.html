@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUWANT IGIVE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="School.css">
+    <script src="SlidePic.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="Home.html"><img src="logo.png" alt="logo"></a>
+        <a class="formschool" href="FormSchool.html">+ โรงเรียนที่ต้องการความช่วยเหลือ</a>
+    </nav>
+    <div class="barschool">
+        <ul>
+            <li><a id="athere" href="ChaiNat.html">ชัยนาท</a></li>
+            <li><a href="NakhonNayok.html">นครนายก</a></li>
+            <li><a href="NakhonPathom.html">นครปฐม</a></li>
+            <li><a href="PathumThani.html">ปทุมธานี</a></li>
+            <li><a href="PrachinBuri.html">ปราจีนบุรี</a></li>
+            <li><a href="Ayutthaya.html">พระนครศรีอยุธยา</a></li>
+            <li><a href="PhitsanuLok.html">พิษณุโลก</a></li>
+            <li><a href="PhetchaBun.html">เพชรบูรณ์</a></li>
+            <li><a href="SamutSongkhram.html">สมุทรสงคราม</a></li>
+            <li><a href="SaraBuri.html">สระบุรี</a></li>
+            <li><a href="SukhoThai.html">สุโขทัย</a></li>
+            <li><a href="SuphanBuri.html">สุพรรณบุรี</a></li>
+            <li><a href="UthaiThani.html">อุทัยธานี</a></li>
+        </ul>
+    </div>
+    <div class="allschool">
+        <h2>โรงเรียนวัดหัวตะพาน</h2>
+        <center>
+            <div class="photo" style="max-width:500px">
+
+                <img class="mySlides" src="WatHuaTaphan1.jpg">
+                <img class="mySlides" src="WatHuaTaphan2.jpg">
+                <img class="mySlides" src="WatHuaTaphan3.jpg">
+
+            </div>
+        </center>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+        </script>
+
+
+        <div class="school">
+            <div class="infomation">
+                <div class="one">
+                    <p class="topic"> ระดับชั้น </p>
+                    <p class="info"> อนุบาล - ประถมศึกษาปีที่ 6</p>
+                </div>
+                <div class="two">
+                    <p class="topic"> ที่อยู่ </p>
+                    <p class="info"> หมู่ที่ 14 บ้านหัวตะพาน ตำบลแพรกศรีราชา อำเภอสรรคบุรี จังหวัดชัยนาท รหัสไปรษณีย์
+                        17140</p>
+                </div>
+
+                <div class="three">
+                    <p class="topic"> ช่องทางการติดต่อ </p>
+                    <p class="info"> Tel : 094-6599-352 (ครูสมประสงค์)<br>
+                        <a class="infoun" href="https://facebook.com" target="_blank">FACEBOOK :</a> 
+                        <a class="info"
+                            href="https://facebook.com" target="_blank">
+                            tyuiaplgvp</a>
+                    </p>
+                </div>
+
+
+                <div class="four">
+                    <p class="topic"> เว็บไซต์โรงเรียน </p>
+                    
+                    <a class="info" href="https://data.bopp-obec.info/web/home.php?School_ID=1018090108"
+                        target="_blank"><p class="info">
+                            โรงเรียนวัดหัวตะพาน
+                            สำนักงานเขตพื้นที่การศึกษาประถมศึกษาชัยนาท
+                            
+                    </a></p>
+                </div>
+            </div>
+            <div class="iconcon">
+                <div class="icon">
+                    <img class="iconbook" src="bookja.png" alt="iconbook">
+                    <img class="iconshirt" src="shirtja.png" alt="iconshirt">
+                    <img class="iconsport" src="sportja.png" alt="iconsport">
+                    <img class="icontoy" src="toyja.png" alt="icontoy">
+                    <img class="iconpen" src="penja.png" alt="iconpen">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
